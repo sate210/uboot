@@ -1,0 +1,2 @@
+#!/bin/sh
+cp u-boot.bin /home/lockey/s5pv210/fastboot
