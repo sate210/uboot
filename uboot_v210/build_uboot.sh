@@ -1,4 +1,4 @@
 #!/bin/bash
 make mrproper
-make sata210_config
+make sate210_config
 make -j8

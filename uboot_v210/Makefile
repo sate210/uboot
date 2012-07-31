@@ -2573,7 +2573,7 @@ smdkv210single_config :	unconfig
 	@$(MKCONFIG) $(@:_config=) arm s5pc11x smdkc110 samsung s5pc110
 	@echo "TEXT_BASE = 0xc3e00000" > $(obj)board/samsung/smdkc110/config.mk
 
-sata210_config :	unconfig
+sate210_config :	unconfig
 	@$(MKCONFIG) $(@:_config=) arm s5pc11x smdkc110 samsung s5pc110
 	@echo "TEXT_BASE = 0xc3e00000" > $(obj)board/samsung/smdkc110/config.mk
 
