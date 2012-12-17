@@ -225,9 +225,15 @@ static __inline__ int abortboot(int bootdelay)
 	 */
 	if (bootdelay >= 0) {
 		if (tstc()) {	/* we got a key press	*/
-			(void) getc();  /* consume input	*/
-			puts ("\b\b\b 0");
-			abort = 1;	/* don't auto boot	*/
+			//		(void) getc();  /* consume input	*/
+			if(getc() == 0x66){
+			   udelay(1000);
+			   if(getc() == 0x66){
+			       puts ("\b\b\b 0");
+			       abort = 1;	/* don't auto boot	*/			 	
+			 }
+		    }
+
 		}
 	}
 #endif
